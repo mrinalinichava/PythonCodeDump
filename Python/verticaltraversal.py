@@ -72,5 +72,6 @@ root.right.right.left.right = Node(11)
 root.right.right.left.right.right = Node(12) 
 print("Vertical order traversal is ") 
 verticalOrder(root)
+print("yoyo honeysingh")
 
 # This code is contributed by Shweta Singh 
