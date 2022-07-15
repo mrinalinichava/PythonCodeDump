@@ -19,3 +19,19 @@ def findall(s,i,j):
     
 
 print(palindromes("aabbbaa"))
+
+#longest subsequence without repeating characters
+string ="geeksforgeeks"
+def longestsubstr(string):
+    n= len(string)
+    lastindex={}
+    maxlen=0
+    start=0
+    end=0
+    for i in range(n):
+        if(string[i] in lastindex):
+            start= max(start,lastindex[string[i]]+1)
+        maxlen= max(maxlen,i-start+1)
+        lastindex[string[i]]=i
+    return maxlen
+print(longestsubstr(string))
